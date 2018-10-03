@@ -5,7 +5,9 @@
 
 
     
-def mains(speed,miles):
+def main(speed,miles):
     s = speed
     m = miles
     print(m/s)
+ 
+main(186000, 34000000)
