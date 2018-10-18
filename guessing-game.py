@@ -7,6 +7,8 @@ while not guess == answer:
     guess = input("Enter an animal name: ").lower()
     if guess == answer:
         print("You guessesd it!")
+    elif guess == "quit".lower():
+        break
     else: 
         print("That's not right try again")
 	
