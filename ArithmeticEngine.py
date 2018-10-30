@@ -14,8 +14,6 @@ def showOutro():
 def doLoop():
     while True:
         cmd = input("What computation do you want to perform? ").lower()
-        num1 = int(input("Enter the first number: "))
-        num2 = int(input("Enter the second number: "))
         if cmd=="add" or cmd=="sub" or cmd == "mult" or cmd == "div" or cmd == "power":
             num1 = int(input("Enter the first number: "))
             num2 = int(input("Enter the second number: "))
