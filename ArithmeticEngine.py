@@ -16,19 +16,22 @@ def doLoop():
         cmd = input("What computation do you want to perform? ").lower()
         num1 = int(input("Enter the first number: "))
         num2 = int(input("Enter the second number: "))
-        if cmd == "add":
-            result = num1 + num2
-        elif cmd == "sub":
-            result = num1 - num2
-        elif cmd == "mult":
-            result = num1 * num2
-        elif cmd == "div":
-            result = num1 // num2
-        elif cmd == "power":
-            result = num1 ** num2
+        if cmd=="add" or cmd=="sub" or cmd == "mult" or cmd == "div" or cmd == "power":
+            num1 = int(input("Enter the first number: "))
+            num2 = int(input("Enter the second number: "))
+            if cmd == "add":
+                result = num1 + num2
+            elif cmd == "sub":
+                result = num1 - num2
+            elif cmd == "mult":
+                result = num1 * num2
+            elif cmd == "div":
+                result = num1 // num2
+            elif cmd == "power":
+                result = num1 ** num2
+            print("The result is ", int(result), ".\n") 
         elif cmd == "quit":
             break
-            print("The result is ", int(result), ".\n") 
         else:
             print("That is not a valid command, try again.")
             continue
